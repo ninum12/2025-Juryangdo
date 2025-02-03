@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
-import TestPage from "./pages/testPage";
-import ResultPage from "./pages/resultPage";
+import TestPage from "./pages/TestPage/TestPage";
+import ResultPage from "./pages/ResultPage/ResultPage";
 import { GlobalStyle } from "./styles/GlobalStyle.style";
 
 export default function App() {
