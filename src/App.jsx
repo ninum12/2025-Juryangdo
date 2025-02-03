@@ -1,11 +1,14 @@
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
 import TestPage from "./pages/testPage";
 import ResultPage from "./pages/resultPage";
+import { GlobalStyle } from "./styles/GlobalStyle.style";
 
-const App = () => {
+export default function App() {
   return (
-    <div>
+    <>
+      <GlobalStyle />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -13,9 +16,7 @@ const App = () => {
           <Route path="/result" element={<ResultPage />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   );
-};
-
-export default App;
+}
 

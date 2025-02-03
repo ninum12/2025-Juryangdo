@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import * as S from "./Mainpage.style";
 
-const MainPage = () => {
+export default function MainPage() {
   return (
     <S.Root>
-      <S.ContentsWrapper>
+      <S.Container>
         <Link to="/test">Go</Link>
-      </S.ContentsWrapper>
+      </S.Container>
+      <S.Container></S.Container>
+      <S.Container></S.Container>
     </S.Root>
   );
-};
-
-export default MainPage;
+}
