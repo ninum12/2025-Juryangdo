@@ -1,0 +1,13 @@
+:root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  place-content: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
