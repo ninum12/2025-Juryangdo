@@ -11,7 +11,17 @@ export default function AlcoholDisplayCard() {
               {cell.isImage ? (
                 <S.AlcoholCell
                   key={`${typeIndex}-${cellIndex}`}
-                ></S.AlcoholCell>
+                  // src={cell.img}
+                >
+                  <img
+                    src={cell.img}
+                    style={{
+                      height: "100%",
+                      maxHeight: "80px",
+                      padding: "5px",
+                    }}
+                  />
+                </S.AlcoholCell>
               ) : (
                 <S.EmptyLightGrayCell></S.EmptyLightGrayCell>
               )}

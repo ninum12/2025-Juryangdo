@@ -6,11 +6,14 @@ export default function MainPage() {
   return (
     <S.Root>
       <S.Container>
-        <CircleInSquareCard
-          content={"酒量"}
-          font={"KoPubWorldBatang"}
-          fontSize={"96px"}
-        />
+        <S.CircleInSquareWrapper>
+          <CircleInSquareCard
+            content={"酒量"}
+            font={"KoPubWorldBatang"}
+            fontSize={"96px"}
+          />
+          <S.VerticalLongRectangle></S.VerticalLongRectangle>
+        </S.CircleInSquareWrapper>
         <AlcoholDisplayCard />
       </S.Container>
       <S.Container>

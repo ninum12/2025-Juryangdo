@@ -31,7 +31,8 @@ export const AlcoholCell = styled.div`
   font-size: 12px;
   border: 2px solid #000000;
 
-  background-size: 50px;
+  background-image: ${(props) => `url(${props.img})`};
+  background-size: auto;
   background-position: center;
 `;
 
